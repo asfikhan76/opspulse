@@ -38,8 +38,8 @@ export function ChannelChart() {
         <CardTitle className="text-base">Traffic Sources</CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="h-[240px] w-full min-w-0">
-          <ResponsiveContainer width="100%" height="100%" minWidth={0}>
+        <div className="w-full min-w-0">
+          <ResponsiveContainer width="100%" height={240} minWidth={0}>
             <PieChart>
               <Pie
                 data={channelData}
