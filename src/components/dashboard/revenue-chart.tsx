@@ -40,7 +40,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
 export function RevenueChart() {
   return (
-    <Card>
+    <Card className="overflow-hidden">
       <Tabs defaultValue="monthly">
         <CardHeader className="flex flex-row items-center justify-between pb-2">
           <CardTitle className="text-base">Revenue & Profit</CardTitle>

@@ -130,7 +130,7 @@ export default function AnalyticsPage() {
       </div>
 
       {/* Revenue vs Profit Chart */}
-      <Card>
+      <Card className="overflow-hidden">
         <CardHeader>
           <CardTitle className="text-base">Revenue vs Profit Analysis</CardTitle>
         </CardHeader>
@@ -208,7 +208,7 @@ export default function AnalyticsPage() {
       {/* Second row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* User Growth */}
-        <Card className="min-w-0">
+        <Card className="min-w-0 overflow-hidden">
           <CardHeader>
             <CardTitle className="text-base">User Growth Trend</CardTitle>
           </CardHeader>
@@ -234,7 +234,7 @@ export default function AnalyticsPage() {
         </Card>
 
         {/* Weekly Comparison */}
-        <Card className="min-w-0">
+        <Card className="min-w-0 overflow-hidden">
           <CardHeader>
             <CardTitle className="text-base">Weekly Performance</CardTitle>
           </CardHeader>

@@ -52,9 +52,9 @@ export default function DashboardPage() {
       </div>
 
       {/* Bottom Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <PerformanceMetrics />
-        <ActivityFeed />
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 min-w-0">
+        <div className="min-w-0"><PerformanceMetrics /></div>
+        <div className="min-w-0"><ActivityFeed /></div>
       </div>
     </div>
   );

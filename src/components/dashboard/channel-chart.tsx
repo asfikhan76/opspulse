@@ -33,7 +33,7 @@ const CustomTooltip = ({ active, payload }: any) => {
 
 export function ChannelChart() {
   return (
-    <Card>
+    <Card className="overflow-hidden">
       <CardHeader>
         <CardTitle className="text-base">Traffic Sources</CardTitle>
       </CardHeader>
