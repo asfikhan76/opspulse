@@ -51,7 +51,7 @@ export default function RootLayout({
               <Sidebar />
               <AppShell>
                 <Header />
-                <main className="flex-1 p-6">{children}</main>
+                <main className="flex-1 min-w-0 p-6">{children}</main>
               </AppShell>
             </div>
           </SidebarProvider>
