@@ -142,8 +142,8 @@ export default function AnalyticsPage() {
               <TabsTrigger value="line">Line</TabsTrigger>
             </TabsList>
             <TabsContent value="area">
-              <div className="h-[350px] mt-4">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[350px] w-full min-w-0 mt-4">
+                <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                   <AreaChart data={monthlyData}>
                     <defs>
                       <linearGradient id="aRevenue" x1="0" y1="0" x2="0" y2="1">
@@ -171,8 +171,8 @@ export default function AnalyticsPage() {
               </div>
             </TabsContent>
             <TabsContent value="bar">
-              <div className="h-[350px] mt-4">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[350px] w-full min-w-0 mt-4">
+                <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                   <BarChart data={monthlyData}>
                     <CartesianGrid strokeDasharray="3 3" className="stroke-slate-200 dark:stroke-slate-700" />
                     <XAxis dataKey="name" stroke="#475569" fontSize={12} tickLine={false} />
@@ -186,8 +186,8 @@ export default function AnalyticsPage() {
               </div>
             </TabsContent>
             <TabsContent value="line">
-              <div className="h-[350px] mt-4">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[350px] w-full min-w-0 mt-4">
+                <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                   <LineChart data={monthlyData}>
                     <CartesianGrid strokeDasharray="3 3" className="stroke-slate-200 dark:stroke-slate-700" />
                     <XAxis dataKey="name" stroke="#475569" fontSize={12} tickLine={false} />
@@ -208,13 +208,13 @@ export default function AnalyticsPage() {
       {/* Second row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* User Growth */}
-        <Card>
+        <Card className="min-w-0">
           <CardHeader>
             <CardTitle className="text-base">User Growth Trend</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="h-[300px]">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-[300px] w-full min-w-0">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                 <AreaChart data={monthlyData}>
                   <defs>
                     <linearGradient id="userGrad" x1="0" y1="0" x2="0" y2="1">
@@ -234,13 +234,13 @@ export default function AnalyticsPage() {
         </Card>
 
         {/* Weekly Comparison */}
-        <Card>
+        <Card className="min-w-0">
           <CardHeader>
             <CardTitle className="text-base">Weekly Performance</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="h-[300px]">
-              <ResponsiveContainer width="100%" height="100%">
+            <div className="h-[300px] w-full min-w-0">
+              <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                 <BarChart data={weeklyData}>
                   <CartesianGrid strokeDasharray="3 3" className="stroke-slate-200 dark:stroke-slate-700" />
                   <XAxis dataKey="name" stroke="#475569" fontSize={12} tickLine={false} />
